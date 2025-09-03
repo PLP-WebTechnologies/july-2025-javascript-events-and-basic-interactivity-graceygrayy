@@ -18,14 +18,12 @@ header {
   text-align: center;
   padding: 40px 20px;
   background: #122645; /* Slightly lighter navy */
-  border-bottom: 2px solid #D4AF37;
+  border-bottom: 2px solid #D4AF37; /* Gold accent */
 }
 
 header h1 {
   font-size: 2.8rem;
-  color: #D4AF37; /* Gold */
-  text-shadow: 0 0 8px #D4AF37, 0 0 15px #fff3b0;
-  animation: glow 3s ease-in-out infinite alternate;
+  color: #FFFFFF; /* White */
 }
 
 header p {
@@ -39,24 +37,16 @@ main section {
   padding: 20px;
   max-width: 800px;
   background-color: #142A4C; /* Dark navy block */
-  border: 1px solid #D4AF37;
+  border: 1px solid #D4AF37; /* Gold border */
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
 main h2 {
-  color: #D4AF37;
+  color: #FFFFFF; /* White headings */
   margin-bottom: 15px;
-  border-bottom: 1px solid #D4AF37;
+  border-bottom: 1px solid #D4AF37; /* Gold underline */
   padding-bottom: 5px;
-  text-shadow: 0 0 5px #D4AF37, 0 0 10px #fff3b0;
-  animation: glow 4s ease-in-out infinite alternate;
-}
-
-/* Glow Animation */
-@keyframes glow {
-  from { text-shadow: 0 0 5px #D4AF37, 0 0 10px #fff3b0; }
-  to   { text-shadow: 0 0 20px #fff8dc, 0 0 35px #D4AF37; }
 }
 
 /* Lists */
@@ -68,7 +58,7 @@ main h2 {
 .features li {
   margin-bottom: 10px;
   padding: 8px;
-  border-left: 3px solid #D4AF37;
+  border-left: 3px solid #D4AF37; /* Gold accent line */
 }
 
 /* Button */
@@ -84,19 +74,19 @@ button {
 }
 button:hover {
   background-color: #fff3b0;
-  box-shadow: 0 0 15px #D4AF37;
+  box-shadow: 0 0 10px #D4AF37;
 }
 
 /* Form */
 input, select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #D4AF37;
+  border: 1px solid #D4AF37; /* Gold border */
   border-radius: 6px;
   margin-top: 5px;
   margin-bottom: 15px;
   background-color: #0A1A2F;
-  color: #FFFFFF;
+  color: #FFFFFF; /* White text */
 }
 input:focus, select:focus {
   outline: none;
@@ -106,7 +96,7 @@ input:focus, select:focus {
 #form-message {
   margin-top: 10px;
   font-weight: bold;
-  color: #D4AF37;
+  color: #FFFFFF; /* White message text */
 }
 
 /* Footer */
