@@ -1,45 +1,80 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2E6237;
-  color: #F5F5DC;
+  background-color: #FADADD; /* Light Pink */
+  color: #FFFFFF; /* White text */
   line-height: 1.6;
   padding: 20px;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #244c2b;
-  border-bottom: 2px solid #F8E231;
+  background: #e6a9b8; /* Deeper pink for contrast */
+  border-bottom: 2px solid #fff;
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #F8E231;
-  text-shadow: 0 0 5px #F8E231, 0 0 10px #f9e86f;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ffe6f0;
   animation: glow 2.5s ease-in-out infinite alternate;
 }
 
+header p {
+  font-style: italic;
+  color: #fff;
+}
+
+/* Sections */
 main section {
   margin: 40px auto;
   padding: 20px;
   max-width: 800px;
-  background-color: #345e3c;
-  border: 1px solid #F8E231;
+  background-color: #f5c4d4; /* Slightly darker pink */
+  border: 1px solid #fff;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(248, 226, 49, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Glow animation */
+main h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  text-shadow: 0 0 3px #fff, 0 0 6px #ffe6f0;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* Glow Animation */
 @keyframes glow {
-  from { text-shadow: 0 0 5px #F8E231, 0 0 10px #f9e86f; }
-  to   { text-shadow: 0 0 15px #fff4b2, 0 0 25px #F8E231; }
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #ffe6f0; }
+  to   { text-shadow: 0 0 15px #fff4f9, 0 0 25px #fff; }
 }
 
-/* Buttons */
+/* Lists */
+.features ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-left: 3px solid #fff;
+}
+
+/* Button */
 button {
-  background-color: #F8E231;
-  color: #2E6237;
+  background-color: #fff;
+  color: #e6a9b8;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -48,25 +83,35 @@ button {
   transition: all 0.3s ease-in-out;
 }
 button:hover {
-  background-color: #ffe867;
-  box-shadow: 0 0 12px #F8E231;
+  background-color: #ffe6f0;
+  box-shadow: 0 0 12px #fff;
 }
 
-/* Inputs & Form */
+/* Form */
 input, select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #F8E231;
+  border: 1px solid #fff;
   border-radius: 6px;
   margin-top: 5px;
   margin-bottom: 15px;
 }
 input:focus, select:focus {
   outline: none;
-  border-color: #ffe867;
-  box-shadow: 0 0 6px #F8E231;
+  border-color: #ffe6f0;
+  box-shadow: 0 0 6px #fff;
 }
 #form-message {
   margin-top: 10px;
   font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid #fff;
+  font-size: 0.9rem;
+  color: #fff;
 }
