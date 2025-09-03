@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracey's Oil Perfume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Gracey's Oil Perfume ✨</h1>
+    <p>Luxury in Every Drop</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Our Perfume</h2>
+      <p>
+        Gracey’s Oil Perfume is crafted with the finest natural oils, 
+        giving you a long-lasting fragrance that speaks elegance and style.  
+        Perfect for any occasion, it leaves a lasting impression wherever you go.
+      </p>
+    </section>
+
+    <section class="features">
+      <h2>Why Choose Gracey’s?</h2>
+      <ul>
+        <li>🌸 Long-lasting fragrance</li>
+        <li>🌿 100% natural oil extracts</li>
+        <li>💎 Elegant & classy packaging</li>
+        <li>✨ Perfect for both men and women</li>
+      </ul>
+    </section>
+
+    <section class="dynamic">
+      <h2 id="welcome-message"></h2>
+
+      <h3>Best Sellers</h3>
+      <ul id="best-sellers"></ul>
+
+      <button id="discount-btn">Get 10% Discount</button>
+      <p id="discount-result"></p>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+      <h2>Order Your Perfume</h2>
+      <form id="orderForm">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="size">Perfume Size:</label><br>
+        <select id="size" name="size">
+          <option value="">--Select Size--</option>
+          <option value="small">Small (50ml)</option>
+          <option value="medium">Medium (100ml)</option>
+          <option value="large">Large (150ml)</option>
+        </select><br><br>
+
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gracey’s Oil Perfume | All Rights Reserved</p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
