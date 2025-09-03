@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #FADADD; /* Light Pink */
+  font-family: 'Georgia', serif;
+  background-color: #0A1A2F; /* Deep Navy */
   color: #FFFFFF; /* White text */
   line-height: 1.6;
   padding: 20px;
@@ -17,20 +17,20 @@ body {
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #e6a9b8; /* Deeper pink for contrast */
-  border-bottom: 2px solid #fff;
+  background: #122645; /* Slightly lighter navy */
+  border-bottom: 2px solid #D4AF37;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #ffe6f0;
-  animation: glow 2.5s ease-in-out infinite alternate;
+  font-size: 2.8rem;
+  color: #D4AF37; /* Gold */
+  text-shadow: 0 0 8px #D4AF37, 0 0 15px #fff3b0;
+  animation: glow 3s ease-in-out infinite alternate;
 }
 
 header p {
   font-style: italic;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 /* Sections */
@@ -38,25 +38,25 @@ main section {
   margin: 40px auto;
   padding: 20px;
   max-width: 800px;
-  background-color: #f5c4d4; /* Slightly darker pink */
-  border: 1px solid #fff;
+  background-color: #142A4C; /* Dark navy block */
+  border: 1px solid #D4AF37;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 main h2 {
-  color: #fff;
+  color: #D4AF37;
   margin-bottom: 15px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #D4AF37;
   padding-bottom: 5px;
-  text-shadow: 0 0 3px #fff, 0 0 6px #ffe6f0;
-  animation: glow 3s ease-in-out infinite alternate;
+  text-shadow: 0 0 5px #D4AF37, 0 0 10px #fff3b0;
+  animation: glow 4s ease-in-out infinite alternate;
 }
 
 /* Glow Animation */
 @keyframes glow {
-  from { text-shadow: 0 0 5px #fff, 0 0 10px #ffe6f0; }
-  to   { text-shadow: 0 0 15px #fff4f9, 0 0 25px #fff; }
+  from { text-shadow: 0 0 5px #D4AF37, 0 0 10px #fff3b0; }
+  to   { text-shadow: 0 0 20px #fff8dc, 0 0 35px #D4AF37; }
 }
 
 /* Lists */
@@ -68,13 +68,13 @@ main h2 {
 .features li {
   margin-bottom: 10px;
   padding: 8px;
-  border-left: 3px solid #fff;
+  border-left: 3px solid #D4AF37;
 }
 
 /* Button */
 button {
-  background-color: #fff;
-  color: #e6a9b8;
+  background-color: #D4AF37; /* Gold */
+  color: #0A1A2F; /* Navy text */
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -83,27 +83,30 @@ button {
   transition: all 0.3s ease-in-out;
 }
 button:hover {
-  background-color: #ffe6f0;
-  box-shadow: 0 0 12px #fff;
+  background-color: #fff3b0;
+  box-shadow: 0 0 15px #D4AF37;
 }
 
 /* Form */
 input, select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #D4AF37;
   border-radius: 6px;
   margin-top: 5px;
   margin-bottom: 15px;
+  background-color: #0A1A2F;
+  color: #FFFFFF;
 }
 input:focus, select:focus {
   outline: none;
-  border-color: #ffe6f0;
-  box-shadow: 0 0 6px #fff;
+  border-color: #fff3b0;
+  box-shadow: 0 0 6px #D4AF37;
 }
 #form-message {
   margin-top: 10px;
   font-weight: bold;
+  color: #D4AF37;
 }
 
 /* Footer */
@@ -111,7 +114,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  border-top: 2px solid #fff;
+  border-top: 2px solid #D4AF37;
   font-size: 0.9rem;
-  color: #fff;
+  color: #FFFFFF;
 }
