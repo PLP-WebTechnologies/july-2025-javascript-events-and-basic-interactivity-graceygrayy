@@ -7,70 +7,80 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1> Gracey's Oil Perfume </h1>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <h1>Gracey's Oil Perfume</h1>
     <p>Luxury in Every Drop</p>
   </header>
 
+  <!-- About Section -->
   <main>
-    <section class="about">
-      <h2>About Our Perfume</h2>
-      <p>
-        Gracey’s Oil Perfume is crafted with the finest natural oils, 
-        giving you a long-lasting fragrance that speaks elegance and style.  
-        Perfect for any occasion, it leaves a lasting impression wherever you go.
-      </p>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Gracey's, we craft timeless oil perfumes with elegance and passion. Every bottle tells a story of beauty and luxury.</p>
     </section>
 
-    <section class="features">
-      <h2>Why Choose Gracey’s?</h2>
+    <!-- Products Section -->
+    <section id="products" class="features">
+      <h2>Our Products</h2>
       <ul>
-        <li> Long-lasting fragrance</li>
-        <li> 100% natural oil extracts</li>
-        <li> Elegant & classy packaging</li>
-        <li> Perfect for both men and women</li>
+        <li>Royal Oud</li>
+        <li>Velvet Rose</li>
+        <li>Golden Musk</li>
       </ul>
     </section>
 
+    <!-- Dynamic Section (JS Interactions) -->
     <section class="dynamic">
       <h2 id="welcome-message"></h2>
-
-      <h3>Best Sellers</h3>
-      <ul id="best-sellers"></ul>
-
       <button id="discount-btn">Get 10% Discount</button>
       <p id="discount-result"></p>
     </section>
 
-    <!-- FORM SECTION -->
-    <section class="form-section">
-      <h2>Order Your Perfume</h2>
-      <form id="orderForm">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
+    <!-- Contact / Form Section -->
+    <section id="contact" class="form-section">
+      <h2>Contact Us</h2>
+      <form id="perfume-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
-        <label for="email">Email Address:</label><br>
-        <input type="text" id="email" name="email"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
 
-        <label for="size">Perfume Size:</label><br>
-        <select id="size" name="size">
-          <option value="">--Select Size--</option>
-          <option value="small">Small (50ml)</option>
-          <option value="medium">Medium (100ml)</option>
-          <option value="large">Large (150ml)</option>
-        </select><br><br>
+        <label for="size">Select Perfume Size:</label>
+        <select id="size">
+          <option value="">Choose a size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
 
-        <button type="submit">Place Order</button>
+        <button type="submit">Submit</button>
+        <p id="form-message"></p>
       </form>
-      <p id="form-message"></p>
     </section>
   </main>
 
+  <!-- Footer with Social Media -->
   <footer>
-    <p>© 2025 Gracey’s Oil Perfume | All Rights Reserved</p>
+    <p>&copy; 2025 Gracey's Oil Perfume. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </div>
   </footer>
 
-  <!-- Link JS -->
   <script src="script.js"></script>
 </body>
 </html>
