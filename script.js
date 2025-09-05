@@ -27,7 +27,7 @@ function applyDiscount(price, discountPercent) {
 // Function 2: Show Welcome Message
 function showWelcomeMessage() {
   let welcome = document.getElementById("welcome-message");
-  welcome.textContent = " Welcome to Gracey’s Oil Perfume – Luxury in Every Drop ✨";
+  welcome.textContent = " Welcome to Gracey’s Oil Perfume – Luxury in Every Drop ";
 }
 showWelcomeMessage();
 
